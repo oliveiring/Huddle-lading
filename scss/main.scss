@@ -92,18 +92,15 @@ img{width: 100%;}
  .navbar{padding:2rem 0.8rem;}
  .content{padding:0 0.8rem;}
  
-
  #hero{
   height:100%;
   .content{
     .box:nth-child(1){
       margin:4rem 0;
-      
     }
     .box:nth-child(2){
       img{width:100%;}
     }
-    
   }
 }
 
@@ -111,10 +108,10 @@ img{width: 100%;}
 
 .main-page{
   @include row();
-
   #together{
     margin:5rem 0;
     border:1px solid #888;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
     border-radius:0.8rem;
     padding: 3rem;
     margin-top:5rem;
@@ -150,8 +147,6 @@ img{width: 100%;}
         margin:2rem 0;
       }
     }
-    
-    
   }
 } 
   
@@ -160,12 +155,9 @@ img{width: 100%;}
   .logo{
     width:130px;
   }
-  
+
   .btn-top{
     padding: 0.5rem;
   }
+ }
 }
-
-}
-
-
