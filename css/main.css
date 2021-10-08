@@ -1,14 +1,15 @@
 /*colors*/
 /*button*/
-.btn-up {
+.btn-down, .btn-up {
   border-radius: 200px;
   background: #ff52bf;
   color: #fff;
   font-weight: 700;
   opacity: 10;
   transition: 200mc;
+  cursor: pointer;
 }
-.btn-up:hover {
+.btn-down:hover, .btn-up:hover {
   opacity: 0.8;
 }
 
@@ -16,7 +17,23 @@
   padding: 1.2rem 3rem;
   font-size: 0.9rem;
 }
+.btn-down {
+  padding: 1.7rem 5.5rem;
+  border: 0;
+  font-size: 1.3rem;
+}
 
+@media (max-width: 776px) {
+  .btn-up {
+    padding: 1.2rem 3rem;
+    font-size: 0.9rem;
+  }
+  .btn-down {
+    padding: 1rem 2rem;
+    border: 0;
+    font-size: 0.7rem;
+  }
+}
 /************************/
 /*Setting*/
 /************************/
@@ -110,31 +127,54 @@ img {
   margin: 0 auto;
   padding: 8rem 0;
 }
-.main-page #together {
+.main-page .together {
   margin: 2rem 0;
   border: 3px solid #f3efef;
   border-radius: 0.8rem;
 }
-.main-page #together .content {
+.main-page .together .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 4rem 3rem;
 }
-.main-page #together .content .box:nth-child(1) {
+.main-page .together .content .box:nth-child(1) {
   margin: 0 5rem;
 }
-.main-page #together .content .box:nth-child(1) p {
+.main-page .together .content .box:nth-child(1) p {
   color: #808d99;
   margin: 1rem 0;
   width: 85%;
 }
-.main-page #together .content .box:nth-child(2) img {
+.main-page .together .content .box:nth-child(2) img {
   width: 400px;
 }
 
 .row-reverse {
   flex-direction: row-reverse;
+}
+
+.conteiner {
+  border: 3px solid #e9e3e3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  width: 65%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+.conteiner h2 {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+footer {
+  background: #00252e;
+  padding: 10rem;
 }
 
 /************************/
@@ -145,7 +185,8 @@ img {
     padding: 2rem 0.8rem;
   }
 
-  .content {
+  .main-page,
+.content {
     padding: 0 0.8rem;
   }
 
@@ -199,23 +240,26 @@ img {
   .main-page {
     padding: 2rem 0.8rem;
   }
-  .main-page #together {
+  .main-page .together {
     margin: 1rem 0;
   }
-  .main-page #together .content {
+  .main-page .together .content {
     flex-direction: column-reverse;
     padding: 1rem 0.4rem;
   }
-  .main-page #together .content .box:nth-child(1) {
+  .main-page .together .content .box:nth-child(1) {
     margin: 0 1rem;
   }
-  .main-page #together .content .box:nth-child(1) p {
+  .main-page .together .content .box:nth-child(1) p {
     margin: 1rem 0;
     width: 100%;
   }
-  .main-page #together .content .box:nth-child(2) img {
+  .main-page .together .content .box:nth-child(2) img {
     width: 100%;
   }
+}
+.padding {
+  padding: 2rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */

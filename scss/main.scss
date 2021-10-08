@@ -87,15 +87,17 @@ img{width: 100%;}
 .main-page{
   @include row();
   padding:8rem 0;
-  #together{
+  //height: 100%;
+  //position: relative;
+  .together{
     margin:2rem 0;
     border:3px solid  rgb(243, 239, 239);
     border-radius:0.8rem;
     .content{
       display:flex;
-      justify-content:space-between;
+      justify-content:center;
       align-items:center;
-      padding:3rem ;
+      padding:4rem 3rem;
       .box:nth-child(1){
         margin:0 5rem;
         p{
@@ -113,10 +115,31 @@ img{width: 100%;}
 
 .row-reverse{
   flex-direction:row-reverse;
-
 }
 
+.conteiner{
+  border:3px solid  rgb(233, 227, 227);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius:1rem;
+  width:65%;
+  position: absolute;
+  left:0;
+  right:0;
+  //transform:translate(-50%);
+  background:#fff;
+  h2{
+    font-size: 2rem;
+    padding:2rem 0;
+  }
+}
 
+footer{
+  background:c.color(--vary-dark-cyan);
+  padding:10rem;
+}
 /************************/
     /*Media Queries*/
 /************************/
@@ -124,6 +147,7 @@ img{width: 100%;}
 @media(max-width:1024px){
 
  .navbar{padding:2rem 0.8rem;}
+ .main-page,
  .content{padding:0 0.8rem;}
  
  #hero{
@@ -177,7 +201,7 @@ img{width: 100%;}
  
 .main-page{
   padding:2rem 0.8rem;
-  #together{
+  .together{
     margin:1rem 0;
     .content{
       flex-direction: column-reverse;
@@ -196,4 +220,9 @@ img{width: 100%;}
   }
 }
 
+
+
+
 }
+
+.padding{padding:2rem 0;}
