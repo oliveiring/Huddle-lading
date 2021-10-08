@@ -83,6 +83,40 @@ img{width: 100%;}
   }
 }
 
+
+.main-page{
+  @include row();
+  padding:8rem 0;
+  #together{
+    margin:2rem 0;
+    border:3px solid  rgb(243, 239, 239);
+    border-radius:0.8rem;
+    .content{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:3rem ;
+      .box:nth-child(1){
+        margin:0 5rem;
+        p{
+          color:c.color(--grayish-blue);
+          margin:1rem 0;
+          width: 85%;
+        }
+      }
+      .box:nth-child(2){
+        img{width: 400px;}
+      }
+    }
+  }
+}
+
+.row-reverse{
+  flex-direction:row-reverse;
+
+}
+
+
 /************************/
     /*Media Queries*/
 /************************/
@@ -105,31 +139,9 @@ img{width: 100%;}
 }
 
 }
-
-.main-page{
-  @include row();
-  #together{
-    margin:5rem 0;
-    border:1px solid #888;
-    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
-    border-radius:0.8rem;
-    padding: 3rem;
-    margin-top:5rem;
-    .content{
-      display:flex;
-      justify-content: center;
-      align-items:center;
-      padding:0 8rem;
-      .box:nth-child(2){
-        img{width: 400px;}
-      }
-    }
-  }
-}
 @media(max-width:776px){
   body{font-size: 15px;}
  #hero{
-  height: 100vh;
   background-image: url(/images/bg-hero-mobile.svg);
   .content{
     flex-direction: column-reverse;
@@ -137,7 +149,7 @@ img{width: 100%;}
     text-align: center;
     .box:nth-child(1){
       margin:2rem 0;
-     
+      
       h1,
       p{width:100%;}
       h1{
@@ -160,4 +172,28 @@ img{width: 100%;}
     padding: 0.5rem;
   }
  }
+
+
+ 
+.main-page{
+  padding:2rem 0.8rem;
+  #together{
+    margin:1rem 0;
+    .content{
+      flex-direction: column-reverse;
+      padding:1rem 0.4rem;
+      .box:nth-child(1){
+        margin:0 1rem;
+        p{
+          margin:1rem 0;
+          width:100%;
+        }
+      }
+      .box:nth-child(2){
+        img{width:100%;}
+      }
+    }
+  }
+}
+
 }
