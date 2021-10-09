@@ -29,9 +29,8 @@
     font-size: 0.9rem;
   }
   .btn-down {
-    padding: 1rem 2rem;
-    border: 0;
-    font-size: 0.7rem;
+    padding: 1rem 3rem;
+    font-size: 0.6rem;
   }
 }
 /************************/
@@ -122,10 +121,13 @@ img {
   font-weight: 700;
 }
 
+/************************/
+/*The main page*/
+/************************/
 .main-page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 8rem 0;
+  padding: 7rem 0 12rem 0;
 }
 .main-page .together {
   margin: 2rem 0;
@@ -149,32 +151,33 @@ img {
 .main-page .together .content .box:nth-child(2) img {
   width: 400px;
 }
+.main-page .together:nth-child(3) {
+  margin: 0 0 10rem 0;
+}
 
 .row-reverse {
   flex-direction: row-reverse;
 }
 
-.conteiner {
-  border: 3px solid #e9e3e3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  width: 65%;
+.card {
+  border: 3px solid #f3efef;
+  width: 800px;
+  text-align: center;
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 1rem;
+  padding: 4rem;
   background: #fff;
 }
-.conteiner h2 {
-  font-size: 2rem;
-  padding: 2rem 0;
+.card h2 {
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
 }
 
 footer {
   background: #00252e;
-  padding: 10rem;
+  padding: 5rem;
 }
 
 /************************/
@@ -200,6 +203,10 @@ footer {
     width: 100%;
   }
 }
+.main-page {
+  padding: 7rem 0.8rem 12rem 0.8rem;
+}
+
 @media (max-width: 776px) {
   body {
     font-size: 15px;
@@ -238,7 +245,7 @@ footer {
   }
 
   .main-page {
-    padding: 2rem 0.8rem;
+    padding: 2rem 0.8rem 6rem 0.8rem;
   }
   .main-page .together {
     margin: 1rem 0;
@@ -257,9 +264,14 @@ footer {
   .main-page .together .content .box:nth-child(2) img {
     width: 100%;
   }
-}
-.padding {
-  padding: 2rem 0;
+
+  .card {
+    width: 90%;
+    padding: 1rem;
+  }
+  .card h2 {
+    font-size: 1.3rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

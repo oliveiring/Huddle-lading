@@ -42,15 +42,12 @@ $color:(
 @media(max-width:776px){
   .btn{
     &-up{
-      @extend %btn-share;
       padding:1.2rem 3rem;
       font-size:0.9rem;
     }
     &-down{
-      padding:1rem 2rem;
-      @extend %btn-share;
-      border: 0;
-      font-size:0.7rem;
+      padding:1rem 3rem;
+      font-size:0.6rem;
     }
   }
 }
