@@ -38,7 +38,7 @@ img{width: 100%;}
   .content{
     display: flex;
     justify-content: center;
-    padding-top:5rem;
+    padding-top:1rem;
     @include row();
     .box:nth-child(1){
       margin:4rem 0;
@@ -134,9 +134,17 @@ img{width: 100%;}
     font-size: 2.5rem;
   }
 }
-footer{
+.footer{
   background: c.color(--vary-dark-cyan);
-  padding:5rem;
+  padding:15rem 0;
+  color:#fff;
+  .conteiner{
+    @include row();
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .box ul li a{color: #fff;}
+  }
 }
 /************************/
     /*Media Queries*/

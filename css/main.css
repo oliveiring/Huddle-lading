@@ -75,7 +75,7 @@ img {
 .hero .content {
   display: flex;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -178,9 +178,20 @@ img {
   font-size: 2.5rem;
 }
 
-footer {
+.footer {
   background: #00252e;
-  padding: 5rem;
+  padding: 15rem 0;
+  color: #fff;
+}
+.footer .conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .conteiner .box ul li a {
+  color: #fff;
 }
 
 /************************/
