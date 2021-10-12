@@ -15,7 +15,10 @@ body{
 
 ul{list-style:none;}
 
-a{text-decoration: none;}
+a{
+  text-decoration: none;
+  
+}
 
 img{width: 100%;}
 /************************/
@@ -131,21 +134,62 @@ img{width: 100%;}
   background:#fff;
   h2{
     padding-bottom:2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 .footer{
-  background: c.color(--vary-dark-cyan);
-  padding:15rem 0;
-  color:#fff;
+  background:c.color(--vary-dark-cyan);
+  padding:15rem 0 5rem 0;
   .conteiner{
+    display: flex;
+    justify-content: space-around;
     @include row();
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    .box ul li a{color: #fff;}
-  }
+    .box:nth-child(1){
+      .content{
+        display: flex;
+        padding-bottom:2rem;
+        img{
+          width: 15px;
+          height:20px;
+          margin-right:1rem;
+        }
+        p{
+          color: #fff;
+        }
+      }
+    }
+    .box ul li{
+      padding-bottom:1rem;
+      a{
+        color: #fff;
+        transition:200mc;
+        &:hover{
+          color: c.color(--Pink);
+        }
+      }
+    }
+    .box:nth-child(4){
+      ul{
+        display:flex;
+      }
+      li{
+        margin-right:1rem;
+      }
+       i{
+        border:1px solid #fff;
+        height:35px;
+        width:35px;
+        border-radius:50%;
+        text-align:center;
+        line-height:2rem;
+         &:hover{
+          color:c.color(--Pink);
+        }
+      }
+    }
+  } 
 }
+
 /************************/
     /*Media Queries*/
 /************************/
@@ -242,3 +286,4 @@ img{width: 100%;}
 }
 
 }
+

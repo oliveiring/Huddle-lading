@@ -18,9 +18,9 @@
   font-size: 0.9rem;
 }
 .btn-down {
-  padding: 1.7rem 5.5rem;
+  padding: 1.7rem 6rem;
   border: 0;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 776px) {
@@ -175,23 +175,57 @@ img {
 }
 .card h2 {
   padding-bottom: 2rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .footer {
   background: #00252e;
-  padding: 15rem 0;
-  color: #fff;
+  padding: 15rem 0 5rem 0;
 }
 .footer .conteiner {
+  display: flex;
+  justify-content: space-around;
   max-width: 1200px;
   margin: 0 auto;
+}
+.footer .conteiner .box:nth-child(1) .content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-bottom: 2rem;
+}
+.footer .conteiner .box:nth-child(1) .content img {
+  width: 15px;
+  height: 20px;
+  margin-right: 1rem;
+}
+.footer .conteiner .box:nth-child(1) .content p {
+  color: #fff;
+}
+.footer .conteiner .box ul li {
+  padding-bottom: 1rem;
 }
 .footer .conteiner .box ul li a {
   color: #fff;
+  transition: 200mc;
+}
+.footer .conteiner .box ul li a:hover {
+  color: #ff52bf;
+}
+.footer .conteiner .box:nth-child(4) ul {
+  display: flex;
+}
+.footer .conteiner .box:nth-child(4) li {
+  margin-right: 1rem;
+}
+.footer .conteiner .box:nth-child(4) i {
+  border: 1px solid #fff;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+}
+.footer .conteiner .box:nth-child(4) i:hover {
+  color: #ff52bf;
 }
 
 /************************/
