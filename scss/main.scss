@@ -134,6 +134,10 @@ img{width: 100%;}
     font-size: 2rem;
   }
 }
+
+/************************/
+       /*Footer*/
+/************************/
 .footer{
   background:c.color(--vary-dark-cyan);
   padding:15rem 0 5rem 0;
@@ -178,7 +182,7 @@ img{width: 100%;}
         width:35px;
         border-radius:50%;
         text-align:center;
-        line-height:2rem;
+        line-height:1.8em;
          &:hover{
           color:c.color(--Pink);
           border:1px solid c.color(--Pink);
@@ -186,20 +190,13 @@ img{width: 100%;}
       }
     }
   }
-  .conteiner-1{
-    @include row();
-    img{
-      width:220px;
-      color: #fff;
-    }
-  }
+ 
 }
 
 /************************/
     /*Media Queries*/
 /************************/
 @media(max-width:1200px){
-
   .hero
   .navbar{padding:2rem 0.8rem;}
 }
@@ -235,7 +232,6 @@ img{width: 100%;}
     text-align: center;
     .box:nth-child(1){
       margin:2rem 0;
-      
       h1,
       p{width:100%;}
       h1{

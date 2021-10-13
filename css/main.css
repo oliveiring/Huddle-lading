@@ -178,6 +178,9 @@ img {
   font-size: 2rem;
 }
 
+/************************/
+/*Footer*/
+/************************/
 .footer {
   background: #00252e;
   padding: 15rem 0 5rem 0;
@@ -222,19 +225,11 @@ img {
   width: 35px;
   border-radius: 50%;
   text-align: center;
-  line-height: 2rem;
+  line-height: 1.8em;
 }
 .footer .conteiner .box:nth-child(4) i:hover {
   color: #ff52bf;
   border: 1px solid #ff52bf;
-}
-.footer .conteiner-1 {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.footer .conteiner-1 img {
-  width: 220px;
-  color: #fff;
 }
 
 /************************/
