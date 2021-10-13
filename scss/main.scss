@@ -262,14 +262,14 @@ img{width: 100%;}
 .main-page{
   padding:2rem  0.8rem 6rem 0.8rem;
   .conteiner{
-    margin:1rem 0;
+    margin:2rem 0;
     .content{
-      flex-direction: column-reverse;
-      padding:1rem 0.4rem;
+      flex-direction:column-reverse;
+      padding:3rem 0.3rem;
       .box:nth-child(1){
-        //margin-right:1rem;
+        margin:0 0.5rem;
         p{
-          margin:1rem;
+          margin:1rem 0;
           width:100%;
         }
       }
@@ -278,7 +278,9 @@ img{width: 100%;}
       }
     }
   }
-  
+ .conteiner:nth-child(3){
+    margin:0 0 10rem 0;
+  } 
 }
 
 .card{

@@ -308,18 +308,24 @@ img {
     padding: 2rem 0.8rem 6rem 0.8rem;
   }
   .main-page .conteiner {
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
   .main-page .conteiner .content {
     flex-direction: column-reverse;
-    padding: 1rem 0.4rem;
+    padding: 3rem 0.3rem;
+  }
+  .main-page .conteiner .content .box:nth-child(1) {
+    margin: 0 0.5rem;
   }
   .main-page .conteiner .content .box:nth-child(1) p {
-    margin: 1rem;
+    margin: 1rem 0;
     width: 100%;
   }
   .main-page .conteiner .content .box:nth-child(2) img {
     width: 100%;
+  }
+  .main-page .conteiner:nth-child(3) {
+    margin: 0 0 10rem 0;
   }
 
   .card {
