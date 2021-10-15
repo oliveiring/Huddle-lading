@@ -188,9 +188,14 @@ img {
 }
 .footer .conteiner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+}
+.footer .conteiner .logo {
+  width: 220px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(93%) saturate(2%) hue-rotate(65deg) brightness(111%) contrast(101%);
+  padding: 1.5rem 0;
 }
 .footer .conteiner .box:nth-child(1) .content {
   display: flex;
@@ -222,11 +227,12 @@ img {
 }
 .footer .conteiner .box:nth-child(4) i {
   border: 1px solid #fff;
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   text-align: center;
   line-height: 1.8em;
+  font-size: 1.3rem;
 }
 .footer .conteiner .box:nth-child(4) i:hover {
   color: #ff52bf;
@@ -239,6 +245,10 @@ img {
 @media (max-width: 1200px) {
   .hero .navbar {
     padding: 2rem 0.8rem;
+  }
+
+  .conteiner {
+    padding: 0 0.8rem;
   }
 }
 @media (max-width: 1024px) {
@@ -338,8 +348,9 @@ img {
   .footer .conteiner {
     flex-direction: column;
   }
-  .footer .conteiner .box ul li {
-    padding: 1rem 0.8rem;
+  .footer .conteiner .box ul {
+    padding: 0 0.8rem;
+    margin: 1rem 0;
   }
   .footer .conteiner .box:nth-child(4) {
     display: flex;
