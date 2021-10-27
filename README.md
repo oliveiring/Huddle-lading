@@ -1,6 +1,5 @@
 # Huddle-lading
 Challenge from front-end mentor.
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/50673887/137177546-d0da4279-4918-45c8-94e6-5ef3bd104e18.gif)
-
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/50673887/138980664-29e49f3b-adbd-4bbb-acd2-8de819fe781d.gif)
 
