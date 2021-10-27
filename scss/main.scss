@@ -197,9 +197,11 @@ img{width: 100%;}
         }
       }
     }
+  }
+  .last-footer{
+    display: flex;
+    justify-content: end;
     small{
-      display: flex;
-      justify-content:end;
       color: #fff;
     }
   }
@@ -316,6 +318,9 @@ img{width: 100%;}
       align-items: center;
     }
   } 
+}
+.last-footer{
+  text-align: center;
 }
 
 }

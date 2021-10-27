@@ -238,6 +238,13 @@ img {
   color: #ff52bf;
   border: 1px solid #ff52bf;
 }
+.footer .last-footer {
+  display: flex;
+  justify-content: end;
+}
+.footer .last-footer small {
+  color: #fff;
+}
 
 /************************/
 /*Media Queries*/
@@ -356,6 +363,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .last-footer {
+    text-align: center;
   }
 }
 
