@@ -197,7 +197,11 @@ img{width: 100%;}
         }
       }
     }
-    
+    small{
+      display: flex;
+      justify-content:end;
+      color: #fff;
+    }
   }
  
 }
